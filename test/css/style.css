@@ -1,0 +1,208 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,body{ 
+	width:100%;
+	height:100%;
+	background:#111;
+  scroll-behavior: smooth;
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #0000;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin: 0;
+  display: none;
+}
+
+
+/*-------------- main -----------------*/
+body {
+  overflow: hidden;
+}
+h1 {
+  font-size: 90px;
+  color: #fff;
+  z-index: 99;
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 60px;
+  color: #fff;
+  z-index: 99;
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 30px;
+  color: #fff;
+  z-index: 99;
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 25px;
+  color: #fff;
+  z-index: 99;
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+}
+
+p {
+	font-size: 16px;
+	color: #fff;
+  font-family: 'Space Grotesk';
+}
+
+#main {
+	background-color: transparent;
+	position: absolute;
+	padding: 0 5%;
+	width: 90%;
+	overflow-y: scroll;
+	height: 100vh;
+}
+
+.header {
+	justify-content: space-between;
+	display: flex;
+}
+
+#header * {
+	display: flex;
+}
+
+.header i {
+	color: #fff;
+	font-size: 25px;
+}
+
+.header .header_icons {
+	gap: 16px;
+  align-items: center;
+}
+
+.hero {
+	width: 75%;
+	margin: auto;
+	display: flex;
+	height: 80vh;
+}
+
+.hero .title {
+	flex-direction: column;
+	width: 100%;
+	margin: auto;
+	gap: 2em;
+	display: flex;
+}
+
+.logo_cont {
+  width: 100px;
+  height: 100px;
+}
+
+.colm {
+	flex: 0 0 50%;
+	max-width: 50%;
+	align-self: center;
+}
+
+.colm-2 div {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	gap: 1em;
+}
+
+.colm-2 a {
+	font-family: 'Space Grotesk';
+	font-size: 50px;
+	color: #fff;
+	font-weight: bold;
+}
+
+#main2 div {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 25px;
+}
+.btn_cont_1 {
+	justify-content: center;
+	display: flex;
+}
+.btn_1 {
+	background: transparent;
+	border: none;
+}
+.btn_1 i {
+	color: #fff;
+	font-size: 50px;
+}
+#projects {
+	margin-top: 10%;
+}
+.project_title {
+	padding: 45px;
+}
+.project_list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 25px 0;
+}
+.project_list img {
+  max-width: 500px;
+}
+
+.gallery_items {
+  
+}
