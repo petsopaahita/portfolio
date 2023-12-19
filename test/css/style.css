@@ -51,6 +51,7 @@ canvas{
   height: 100%;
   background-color: #0000;
   margin: 0;
+  display: none;
 }
 
 /*-------------- main -----------------*/
@@ -136,7 +137,10 @@ p {
 	width: 75%;
 	margin: auto;
 	display: flex;
-	height: 85vh;
+	height: 75vh;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
 }
 .hero .title {
 	flex-direction: column;
@@ -145,7 +149,27 @@ p {
 	gap: 2em;
 	display: flex;
 }
+.hero2 {
+	position: absolute;
+	bottom: 25px;
+	width: 100%;
+}
+.hero_list {
+	display: flex;
+	justify-content: space-between;
+}
+.hero_list li {
+	position: relative;
+	flex: 0 0 33.33%;
+	max-width: 33%;
+	text-align: center;
+	font-size: 20px;
+}
 
+.hero_list2 {
+	border-right: 1px solid;
+	border-left: 1px solid;
+}
 .logo_cont {
   width: 100px;
   height: 100px;
@@ -155,20 +179,6 @@ p {
 	flex: 0 0 50%;
 	max-width: 50%;
 	align-self: center;
-}
-
-.hero .colm-2 div {
-	display: flex;
-	flex-direction: column;
-	align-items: end;
-}
-.hero .colm-2 div ul {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
-}
-.hero .colm-2 li {
-	font-size: 30px;
 }
 .projects, .menubar, .profile {
 	display: none;
@@ -180,7 +190,7 @@ p {
 	margin: auto;
 }
 .project_title {
-	padding: 150px 0 100px 0;
+	padding: 100px 0;
 	text-align: center;
 }
 .project_list {
