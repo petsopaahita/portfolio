@@ -71,7 +71,7 @@ h2 {
   color: #fff;
   z-index: 99;
   font-family: 'Space Grotesk';
-  font-weight: 400;
+  font-weight: 700;
 }
 
 h3 {
@@ -137,7 +137,7 @@ p {
 	width: 75%;
 	margin: auto;
 	display: flex;
-	height: 75vh;
+	height: 80vh;
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
@@ -165,7 +165,6 @@ p {
 	text-align: center;
 	font-size: 20px;
 }
-
 .hero_list2 {
 	border-right: 1px solid;
 	border-left: 1px solid;
@@ -183,14 +182,16 @@ p {
 .projects, .menubar, .profile {
 	display: none;
 }
+#projects {
+	padding: 25px 0;
+}
 .menubar {
 	position: absolute;
 	width: 90%;
-	height: 50px;
 	margin: auto;
 }
 .project_title {
-	padding: 100px 0;
+	padding: 50px 0;
 	text-align: center;
 }
 .project_list {
