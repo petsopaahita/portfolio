@@ -51,7 +51,12 @@ canvas{
   height: 100%;
   background-color: #0000;
   margin: 0;
-  display: none;
+  transition: transform 1s ease-in-out;
+}
+
+#particles-js.clicked {
+	transform: scale(5);
+	transition: transform 1s;
 }
 
 /*-------------- main -----------------*/
