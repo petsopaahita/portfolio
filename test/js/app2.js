@@ -1,9 +1,9 @@
-particlesJS('particles-js',
+particlesJS('particles-js-2',
   
   {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 3,
         "density": {
           "enable": true,
           "value_area": 800
@@ -28,7 +28,7 @@ particlesJS('particles-js',
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 0.1,
         "random": false,
         "anim": {
           "enable": false,
@@ -38,7 +38,7 @@ particlesJS('particles-js',
         }
       },
       "size": {
-        "value": 5,
+        "value": 250,
         "random": true,
         "anim": {
           "enable": false,
@@ -51,7 +51,7 @@ particlesJS('particles-js',
         "enable": true,
         "distance": 150,
         "color": "#ffffff",
-        "opacity": 0.4,
+        "opacity": 0,
         "width": 1
       },
       "move": {
