@@ -90,7 +90,6 @@ h3 {
   font-family: 'Space Grotesk';
   font-weight: 700;
 }
-
 h4 {
   font-size: 25px;
   color: #fff;
@@ -98,14 +97,16 @@ h4 {
   font-family: 'Space Grotesk';
   font-weight: 400;
 }
-
 li {
 	color: #fff;
   	font-family: 'Space Grotesk';
 }
-li:hover {
+li:hover, i:hover {
     cursor: pointer;
  }
+#header .logo_cont img:hover {
+    cursor: pointer;
+}
 p {
 	font-size: 16px;
 	color: #fff;
@@ -121,8 +122,8 @@ p {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: contain;
+	z-index: 99;
 }
-
 .header {
 	justify-content: space-between;
 	display: flex;
@@ -136,7 +137,6 @@ p {
 	color: #fff;
 	font-size: 25px;
 }
-
 .header .header_icons {
 	gap: 16px;
   align-items: center;
@@ -182,17 +182,25 @@ p {
   width: 100px;
   height: 100px;
 }
+   
+   .header .logo_cont img:hover {
+	opacity: 0.7;
+   }
+   
+   .header .logo_cont img:active {
+	opacity: 0.5;
+   }
 
 .colm {
 	flex: 0 0 50%;
 	max-width: 50%;
 	align-self: center;
 }
-.projects, .menubar, .profile {
+.projects, .menubar, .profile, .contact {
 	display: none;
 }
 #projects {
-	padding: 25px 0;
+	padding: 25px 0 50px 0;
 }
 .menubar {
 	position: absolute;
@@ -221,4 +229,56 @@ p {
 }
 .menubar ul li {
 	font-size: 20px;
+}
+.profile_cont {
+	height: 80vh;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	padding-top: 25px;
+}
+.colm_main {
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+	width: 100%;
+}
+#profile .colm-2 div {
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+#profile img {
+	width: 400px;
+}
+#profile .colm-1 {
+	display: flex;
+	justify-content: center;
+}
+.contact_cont {
+	width: 75%;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+}
+#contact .colm_main {
+	width: 100%;
+	display: flex;
+}
+.contact_title {
+	margin-bottom: 50px;
+}
+#contact .colm li {
+	display: flex;
+	height: 5em;
+	align-items: center;
+}
+#contact .colm li i {
+	font-size: 30px;
+	display: flex;
+	width: 2em;
+	justify-content: center;
 }
