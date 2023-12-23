@@ -1,0 +1,284 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,body{ 
+	width:100%;
+	height:100%;
+	background:#111;
+  	scroll-behavior: smooth;
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #0000;
+  margin: 0;
+  transition: transform 1s ease-in-out;
+}
+
+#particles-js-2{
+	width: 100%;
+	height: 100%;
+	background-color: #0000;
+	margin: 0;
+	transition: transform 1s ease-in-out;
+  }
+
+#particles-js.clicked {
+	transform: scale(5);
+	transition: transform 1s;
+}
+
+/*-------------- main -----------------*/
+body {
+  overflow: hidden;
+}
+h1 {
+  font-size: 90px;
+  color: #fff;
+  z-index: 99;
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 60px;
+  color: #fff;
+  z-index: 99;
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 30px;
+  color: #fff;
+  z-index: 99;
+  font-family: 'Space Grotesk';
+  font-weight: 700;
+}
+h4 {
+  font-size: 25px;
+  color: #fff;
+  z-index: 99;
+  font-family: 'Space Grotesk';
+  font-weight: 400;
+}
+li {
+	color: #fff;
+  	font-family: 'Space Grotesk';
+}
+li:hover, i:hover {
+    cursor: pointer;
+ }
+#header .logo_cont img:hover {
+    cursor: pointer;
+}
+p {
+	font-size: 16px;
+	color: #fff;
+  	font-family: 'Space Grotesk';
+}
+#main {
+	background-color: transparent;
+	position: absolute;
+	padding: 0 5%;
+	width: 90%;
+	overflow-y: scroll;
+	height: 100vh;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index: 99;
+}
+.header {
+	justify-content: space-between;
+	display: flex;
+}
+
+#header * {
+	display: flex;
+}
+
+.header i {
+	color: #fff;
+	font-size: 25px;
+}
+.header .header_icons {
+	gap: 16px;
+  align-items: center;
+}
+
+.hero {
+	width: 75%;
+	margin: auto;
+	display: flex;
+	height: 80vh;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+.hero .title {
+	flex-direction: column;
+	width: 100%;
+	margin: auto;
+	gap: 2em;
+	display: flex;
+}
+.hero2 {
+	position: absolute;
+	bottom: 25px;
+	width: 100%;
+}
+.hero_list {
+	display: flex;
+	justify-content: space-between;
+}
+.hero_list li {
+	position: relative;
+	flex: 0 0 33.33%;
+	max-width: 33%;
+	text-align: center;
+	font-size: 20px;
+}
+.hero_list2 {
+	border-right: 1px solid;
+	border-left: 1px solid;
+}
+.logo_cont {
+  width: 100px;
+  height: 100px;
+}
+   
+   .header .logo_cont img:hover {
+	opacity: 0.7;
+   }
+   
+   .header .logo_cont img:active {
+	opacity: 0.5;
+   }
+
+.colm {
+	flex: 0 0 50%;
+	max-width: 50%;
+	align-self: center;
+}
+.projects, .menubar, .profile, .contact {
+	display: none;
+}
+#projects {
+	padding: 25px 0 50px 0;
+}
+.menubar {
+	position: absolute;
+	width: 90%;
+	margin: auto;
+}
+.project_title {
+	padding: 50px 0;
+	text-align: center;
+}
+.project_list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 75px;
+}
+.project_list img {
+  max-width: 400px;
+  border-radius: 15px;
+}
+.menubar ul {
+	display: flex;
+	justify-content: space-evenly;
+	height: inherit;
+	align-items: center;
+}
+.menubar ul li {
+	font-size: 20px;
+}
+.profile_cont {
+	height: 80vh;
+	display: flex;
+	width: 100%;
+	align-items: center;
+	padding-top: 25px;
+}
+.colm_main {
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+	width: 100%;
+}
+#profile .colm-2 div {
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+#profile img {
+	width: 400px;
+}
+#profile .colm-1 {
+	display: flex;
+	justify-content: center;
+}
+.contact_cont {
+	width: 75%;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+}
+#contact .colm_main {
+	width: 100%;
+	display: flex;
+}
+.contact_title {
+	margin-bottom: 50px;
+}
+#contact .colm li {
+	display: flex;
+	height: 5em;
+	align-items: center;
+}
+#contact .colm li i {
+	font-size: 30px;
+	display: flex;
+	width: 2em;
+	justify-content: center;
+}
