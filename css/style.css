@@ -18,8 +18,6 @@ li{list-style:none}
    My CSS
    ========================================================================== */
 
-/* ---- base ---- */
-
 html,body{ 
 	width:100%;
 	height:100%;
@@ -146,7 +144,7 @@ p {
 	width: 75%;
 	margin: auto;
 	display: flex;
-	height: 80vh;
+	height: 75vh;
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
@@ -160,7 +158,7 @@ p {
 }
 .hero2 {
 	position: absolute;
-	bottom: 25px;
+	bottom: 0;
 	width: 100%;
 }
 .hero_list {
@@ -215,11 +213,14 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	gap: 75px;
+	gap: 5%;
 }
 .project_list img {
-  max-width: 400px;
-  border-radius: 15px;
+	max-width: 300px;
+	border-radius: 5px;
+}
+.gallery_items {
+	margin-bottom: 50px;
 }
 .menubar ul {
 	display: flex;
@@ -231,7 +232,7 @@ p {
 	font-size: 20px;
 }
 .profile_cont {
-	height: 80vh;
+	height: 75vh;
 	display: flex;
 	width: 100%;
 	align-items: center;
@@ -258,7 +259,7 @@ p {
 }
 .contact_cont {
 	width: 75%;
-	height: 80vh;
+	height: 75vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
