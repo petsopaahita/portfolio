@@ -1,0 +1,59 @@
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 60px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    li {
+        font-size: 16px !important;
+    }
+    .colm_main {
+        flex-direction: column;
+    }
+    #profile .colm-2 div {
+        padding-left: 0;
+    }
+    #profile .colm.colm-2 {
+        max-width: 50%;
+    }
+    #profile .colm_main {
+        gap: 3em;
+    }
+    #profile img {
+        width: 300px;
+    }
+    .contact_title {
+        margin-top: 75px;
+        text-align: center;
+    }
+    .contact_cont {
+        width: 100%;
+    }
+    #contact .colm {
+        max-width: 100%;
+        align-self: auto;
+    }
+    #contact .colm_main {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #contact .colm_main {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #contact .colm_main {
+        width: 100%;
+    }
+}
