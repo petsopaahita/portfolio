@@ -53,7 +53,6 @@ canvas{
 	height: 100%;
 	background-color: #0000;
 	margin: 0;
-	transition: left 1s ease;
   }
 
 #particles-js.clicked {
@@ -125,10 +124,15 @@ p {
 .header {
 	justify-content: space-between;
 	display: flex;
+	height: 10vh;
 }
 
 #header * {
 	display: flex;
+}
+
+#header img {
+	width: 100px;
 }
 
 .header i {
@@ -137,14 +141,15 @@ p {
 }
 .header .header_icons {
 	gap: 16px;
-  align-items: center;
+	align-items: center;
+	margin: 0 1em;
 }
 
 .hero {
 	width: 75%;
 	margin: auto;
 	display: flex;
-	height: 75vh;
+	height: 80vh;
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
@@ -175,12 +180,7 @@ p {
 .hero_list2 {
 	border-right: 1px solid;
 	border-left: 1px solid;
-}
-.logo_cont {
-  width: 100px;
-  height: 100px;
-}
-   
+}  
    .header .logo_cont img:hover {
 	opacity: 0.7;
    }
@@ -233,7 +233,7 @@ p {
 	font-size: 20px;
 }
 .profile_cont {
-	height: 75vh;
+	height: 80vh;
 	display: flex;
 	width: 100%;
 	align-items: center;
@@ -261,7 +261,7 @@ p {
 }
 .contact_cont {
 	width: 75%;
-	height: 75vh;
+	height: 80vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
