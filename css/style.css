@@ -130,11 +130,9 @@ p {
 #header * {
 	display: flex;
 }
-
-#header img {
-	width: 100px;
+.logo_cont {
+	max-width: 100px;
 }
-
 .header i {
 	color: #fff;
 	font-size: 25px;
@@ -197,16 +195,14 @@ p {
 .projects, .menubar, .profile, .contact {
 	display: none;
 }
-#projects {
-	padding: 25px 0 50px 0;
-}
 .menubar {
-	position: absolute;
+	position: relative;
 	width: 90%;
 	margin: auto;
+	height: 10vh;
 }
 .project_title {
-	padding: 50px 0;
+	padding: 25px 0 50px 0;
 	text-align: center;
 }
 .project_list {
