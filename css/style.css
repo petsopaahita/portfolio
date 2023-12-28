@@ -252,17 +252,20 @@ p {
 .colm_main {
 	display: flex;
 	flex-direction: row;
-	max-width: 100%;
-	width: 100%;
 	flex-wrap: wrap;
 }
 #profile {
 	height: 100vh;
 }
+#profile .colm_main {
+	max-width: 75%;
+	margin: 0 auto;
+}
 #profile .colm-2 div {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
+	margin: 0 0 0 3em;
 }
 #profile img {
 	width: 300px;
