@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $(".hero_list1").click(function(){
-      $(".hero").fadeOut(1000);
+      $(".hero").fadeOut(1);
+      $(".hero2").fadeOut(250);
       $(".menubar").fadeIn(2000);
       $(".header").fadeOut(1);
       $(".menubar1").hide(0);
@@ -14,7 +15,8 @@ $(document).ready(function(){
  });
 $(document).ready(function(){
   $(".hero_list2").click(function(){
-      $(".hero").fadeOut(1000);
+      $(".hero").fadeOut(1);
+      $(".hero2").fadeOut(250);
       $(".menubar").fadeIn(2000);
       $(".header").fadeOut(1);
       $(".menubar1").show(0);
@@ -28,7 +30,8 @@ $(document).ready(function(){
  });
  $(document).ready(function(){
    $(".hero_list3").click(function(){
-       $(".hero").fadeOut(1000);
+       $(".hero").fadeOut(1);
+       $(".hero2").fadeOut(250);
        $(".menubar").fadeIn(2000);
        $(".header").fadeOut(1);
        $(".menubar1").show(0);
@@ -45,7 +48,7 @@ $(document).ready(function(){
        $(".projects, .profile, .contact").fadeOut(1);
        $(".menubar").fadeOut(1);
        $(".header").fadeIn(1000);
-       $(".hero").fadeIn(1000);
+       $(".hero, .hero2").fadeIn(1000);
        $("#particles-js").addClass("clicked");
        $("#particles-js").fadeIn(2000);
        $('#particles-js').css('transform', 'scale(1)');

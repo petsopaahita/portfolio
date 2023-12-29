@@ -115,18 +115,23 @@ p {
 	padding: 0 5%;
 	width: 90%;
 	overflow-y: scroll;
-	height: 100vh;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: contain;
 	z-index: 99;
 }
+.display_area {
+  height: 100vh;
+}
 .header {
 	justify-content: space-between;
 	display: flex;
 	height: 10vh;
+	position: absolute;
+	width: 90%;
+	top: 0;
+	margin: auto;
 }
-
 #header * {
 	display: flex;
 }
@@ -142,12 +147,11 @@ p {
 	align-items: center;
 	margin: 0 1em;
 }
-
 .hero {
-	width: 75%;
+	width: 100%;
 	margin: auto;
 	display: flex;
-	height: 80vh;
+	height: 100vh;
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
@@ -159,10 +163,15 @@ p {
 	gap: 2em;
 	display: flex;
 }
+.hero1 {
+	max-width: 100%;
+	margin: 0 7%;
+}
 .hero2 {
 	position: absolute;
-	bottom: 0;
+	bottom: 10%;
 	width: 100%;
+	margin: auto;
 }
 .hero_list {
 	display: flex;
@@ -196,13 +205,16 @@ p {
 	display: none;
 }
 .menubar {
-	position: relative;
+	position: absolute;
 	width: 90%;
 	margin: auto;
 	height: 10vh;
+	top: 0;
+}
+#projects {
+	padding-top: 15vh;
 }
 .project_title {
-	padding: 25px 0 50px 0;
 	text-align: center;
 }
 .project_list {
@@ -210,6 +222,7 @@ p {
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	gap: 5%;
+	padding-top: 25px;
 }
 .project_list img {
 	max-width: 300px;
@@ -229,11 +242,10 @@ p {
 	font-size: 20px;
 }
 .profile_cont {
-	height: 80vh;
 	display: flex;
 	width: 100%;
 	align-items: center;
-	padding-top: 50px;
+	height: inherit;
 }
 .colm_main {
 	display: flex;
@@ -242,6 +254,9 @@ p {
 	width: 100%;
 	flex-wrap: wrap;
 }
+#profile {
+	height: 100vh;
+}
 #profile .colm-2 div {
 	display: flex;
 	flex-direction: column;
@@ -249,7 +264,7 @@ p {
 	padding-left: 15%;
 }
 #profile img {
-	width: 400px;
+	width: 300px;
 }
 #profile .colm-1 {
 	display: flex;
@@ -257,11 +272,14 @@ p {
 }
 .contact_cont {
 	width: 75%;
-	height: 80vh;
+	height: inherit;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	margin: auto;
+}
+#contact {
+	height: 100vh;
 }
 #contact .colm_main {
 	width: 100%;

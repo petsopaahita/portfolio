@@ -1,15 +1,15 @@
 @media screen and (max-width: 767px) {
     h1 {
-        font-size: 60px;
+        font-size: 68px;
     }
     h2 {
-        font-size: 30px;
+        font-size: 45px;
     }
     h3 {
-        font-size: 18px;
+        font-size: 23px;
     }
     h4 {
-        font-size: 16px;
+        font-size: 19px;
     }
     li {
         font-size: 16px !important;
@@ -20,17 +20,14 @@
     #profile .colm-2 div {
         padding-left: 0;
     }
-    #profile .colm.colm-2 {
-        max-width: 50%;
+    #profile .colm {
+        max-width: 75%;
     }
     #profile .colm_main {
-        gap: 3em;
-    }
-    #profile img {
-        width: 300px;
+        gap: 2em;
     }
     .contact_title {
-        margin-top: 75px;
+        margin-bottom: 25px;
         text-align: center;
     }
     .contact_cont {
@@ -42,7 +39,10 @@
     }
     #contact .colm_main {
         width: 50%;
-        margin: auto;
+        margin: 0 auto;
+    }
+    #contact .colm li {
+        height: 4em;
     }
 }
 
