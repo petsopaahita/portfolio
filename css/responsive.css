@@ -46,13 +46,13 @@
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 667px) {
     #contact .colm_main {
         width: 75%;
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 567) {
     #contact .colm_main {
         width: 100%;
     }
