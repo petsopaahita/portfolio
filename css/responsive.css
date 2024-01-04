@@ -1,21 +1,18 @@
 @media screen and (max-width: 767px) {
     h1 {
-        font-size: 68px;
+        font-size: 60px;
     }
     h2 {
-        font-size: 45px;
+        font-size: 30px;
     }
     h3 {
-        font-size: 23px;
+        font-size: 24px;
     }
     h4 {
-        font-size: 19px;
+        font-size: 18px;
     }
     li {
         font-size: 16px !important;
-    }
-    p {
-        font-size: 14px;
     }
     .colm_main {
         flex-direction: column;
@@ -30,6 +27,7 @@
         gap: 2em;
     }
     .contact_title {
+        margin-bottom: 24px;
         text-align: center;
     }
     .contact_cont {
@@ -44,7 +42,7 @@
         margin: 0 auto;
     }
     #contact .colm li {
-        height: 3em;
+        height: 4em;
     }
 }
 
