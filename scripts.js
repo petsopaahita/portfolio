@@ -41,14 +41,13 @@ $(document).ready(function(){
   $(".menu").click(function(){
     $(".xpnd_menu").fadeIn(500);
     $(".xpnd_menu").css("display", "flex");
-    $("#main").stop().animate({ opacity: 0.10 }, 1000);
+    $("#main").stop().animate({ opacity: 0.01 }, 1000);
     $("#particles-js-2").stop().animate({ opacity: 0.10 }, 1000);
     });
  });
  $(document).ready(function(){
   $(".backbtn").click(function(){
-       $(".projects, .profile, .contact").fadeOut(1);
-       $(".menubar").fadeOut(1);
+       $(".projects, .profile, .contact, .menubar, .xpnd_menu").fadeOut(1);
        $(".header").fadeIn(1000);
        $(".hero, .hero2").fadeIn(1000);
        $("#particles-js").addClass("clicked");
