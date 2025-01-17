@@ -263,7 +263,8 @@ p {
 	padding-top: 15vh;
 }
 .project_title {
-	text-align: center;
+    text-align: center;
+    margin-bottom: 50px;
 }
 .project_list {
 	display: flex;

@@ -47,13 +47,13 @@ $(document).ready(function(){
  });
  $(document).ready(function(){
   $(".backbtn").click(function(){
-       $(".projects, .profile, .contact, .menubar, .xpnd_menu").fadeOut(1);
-       $(".header").fadeIn(1000);
-       $(".hero, .hero2").fadeIn(1000);
-       $("#particles-js").addClass("clicked");
-       $("#particles-js").fadeIn(2000);
-       $('#particles-js').css('transform', 'scale(1)');
-       $("#main").css("z-index", "2");
+    $(".hero, .hero2, .header").fadeIn(1000);
+    $(".projects, .profile, .contact, .menubar, .xpnd_menu").fadeOut(1);
+    $("#particles-js").addClass("clicked");
+    $("#particles-js").fadeIn(2000);
+    $('#particles-js').css('transform', 'scale(1)');
+    $("#main").css("z-index", "2");
+    $("#main").animate({ opacity: 1 }, 1000);
     });
  });
 
