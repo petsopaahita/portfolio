@@ -56,6 +56,11 @@ $(document).ready(function(){
     $("#main").animate({ opacity: 1 }, 1000);
     });
  });
+ $(document).ready(function(){
+  $(".menubar1").click(function(){
+    $(".projects, .profile, .contact, .menubar, .xpnd_menu").fadeOut(1);
+    });
+ });
 
 
 
