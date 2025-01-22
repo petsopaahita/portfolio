@@ -69,28 +69,30 @@ canvas{
 body {
   overflow: hidden;
 }
+
 h1 {
-  font-size: 80px;
-  color: #fff;
-  z-index: 99;
-  font-family: 'Roboto', monospace; font-weight: 700;
+    color: #fff;
+    z-index: 99;
+    font-family: 'Roboto', monospace;
+    font-weight: 700;
+    font-size: clamp(3.75rem, 3.5rem + 1.25vw, 5rem);
 }
 
 h2 {
-  font-size: 40px;
+  font-size: clamp(1.875rem, 1.75rem + 0.625vw, 2.5rem);
   color: #fff;
   z-index: 99;
   font-family: 'Roboto', 'Arial';  font-weight: 700;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
   color: #fff;
   z-index: 99;
   font-family: 'Roboto', 'Arial'; font-weight: 400;
 }
 h4 {
-  font-size: 24px;
+  font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
   color: #fff;
   z-index: 99;
   font-family: 'Roboto', 'Arial'; font-weight: 400;
@@ -98,6 +100,7 @@ h4 {
 li {
 	color: #fff;
 	font-family: 'Arial';
+	font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
 }
 li:hover, i:hover {
     cursor: pointer;
@@ -150,11 +153,6 @@ p {
 	align-items: center;
 	margin: 0 1em;
 }
-.logo_cont {
-	max-width: 90px;
-	height: inherit;
-	margin: 0 1em;
-}
 .logo_cont img:hover {
     cursor: pointer;
 }
@@ -200,7 +198,6 @@ p {
 	flex: 0 0 33.33%;
 	max-width: 33%;
 	text-align: center;
-	font-size: 24px;
 }
 .hero_list2 {
 	border-right: 1px solid;
