@@ -29,6 +29,22 @@
     #contact .colm li {
         height: 4em;
     }
+    ul.hero_list {
+        flex-direction: column;
+        gap: 30px;
+        margin: 0 7%;
+        align-items: baseline;
+    }
+    .hero_list2 {
+        border-right: 0;
+        border-left: 0;
+    }
+    .menubar ul {
+        display: none;
+    }
+    .menubar .menu {
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 667px) {

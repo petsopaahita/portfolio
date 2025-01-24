@@ -72,29 +72,26 @@ body {
 
 h1 {
     color: #fff;
-    z-index: 99;
+    z-index: 2;
     font-family: 'Roboto', monospace;
     font-weight: 700;
-    font-size: clamp(3.75rem, 3.5rem + 1.25vw, 5rem);
+    font-size: clamp(2.5rem, 2rem + 2.5vw, 5rem);
 }
 
 h2 {
-  font-size: clamp(1.875rem, 1.75rem + 0.625vw, 2.5rem);
+  font-size: clamp(1.875rem, 1.5rem + 1.875vw, 3.75rem);
   color: #fff;
-  z-index: 99;
   font-family: 'Roboto', 'Arial';  font-weight: 700;
 }
 
 h3 {
   font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
   color: #fff;
-  z-index: 99;
   font-family: 'Roboto', 'Arial'; font-weight: 400;
 }
 h4 {
   font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
   color: #fff;
-  z-index: 99;
   font-family: 'Roboto', 'Arial'; font-weight: 400;
 }
 li {
@@ -122,19 +119,15 @@ p {
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: contain;
-	z-index: 99;
+	z-index: 2;
 	transition: transform 1s ease;
 }
 #main * {
 	transition: transform 1s ease;
 }
-.display_area {
-  height: 100vh;
-}
 .header {
 	justify-content: space-between;
 	display: flex;
-	height: 10vh;
 	position: absolute;
 	width: 90%;
 	top: 0;
@@ -146,12 +139,15 @@ p {
 }
 .header i {
 	color: #fff;
-	font-size: 24px;
+	font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
 }
 .header .header_icons {
-	gap: 16px;
+	gap: clamp(0.5rem, 0.4rem + 0.5vw, 1rem);
 	align-items: center;
 	margin: 0 1em;
+}
+.logo_cont img {
+	width: clamp(5rem, 3.5rem + 7.5vw, 12.5rem);
 }
 .logo_cont img:hover {
     cursor: pointer;
@@ -175,7 +171,7 @@ p {
 	flex-direction: column;
 	width: 100%;
 	margin: auto;
-	gap: 2em;
+	gap: 30px;
 	display: flex;
 }
 .hero1 {
@@ -183,20 +179,17 @@ p {
 	margin: 0 7%;
 }
 .hero2 {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	margin: auto;
-	height: 10vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: clamp(2.5rem, 2rem + 2.5vw, 5rem);
 }
 .hero_list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-between;	
 }
 .hero_list li {
-	position: relative;
 	flex: 0 0 33.33%;
-	max-width: 33%;
 	text-align: center;
 }
 .hero_list2 {
@@ -211,7 +204,7 @@ p {
 .xpnd_menu {
 	width: 100%;
 	height: 100vh;
-	z-index: 100;
+	z-index: 4;
 	position: absolute;
 	top: 0;
 	justify-content: center;
@@ -229,17 +222,15 @@ p {
 .xpnd_menu ul {
 	display: flex;
 	flex-direction: column;
-	gap: 2em;
+	gap: 30px;
 }
 .xpnd_menu ul li {
 	font-family: 'Roboto', 'Arial';
-	font-size: 40px;
+	font-size: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
 }
 .menubar {
-	position: absolute;
 	width: 90%;
 	margin: auto;
-	height: 10vh;
 	top: 0;
 	justify-content: space-between;
 }
@@ -254,44 +245,46 @@ p {
 }
 .menubar .menu .fa-solid.fa-bars {
 	color: #fff;
-	font-size: 32px;
+	font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
 }
-#projects {
-	padding-top: 15vh;
+.space-80 {
+	height: clamp(2.5rem, 2rem + 2.5vw, 5rem);
+}
+.space-50 {
+	height: clamp(1.875rem, 1.625rem + 1.25vw, 3.125rem);
 }
 .project_title {
     text-align: center;
-    margin-bottom: 50px;
 }
 .project_list {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	gap: 5%;
-	padding-top: 24px;
 }
 .project_list img {
 	max-width: 400px;
 	border-radius: 4px;
 }
 .gallery_items {
-	margin-bottom: 48px;
+	margin-bottom: 30px;
 }
 .menubar ul {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: flex-end;
 	height: inherit;
 	align-items: center;
 	flex-wrap: wrap;
+	gap: clamp(1.875rem, 1rem + 4.375vw, 6.25rem);
+	width: 100%;
 }
-.menubar ul li {
-	font-size: 18px;
+.menubar .menu {
+	display: none;
 }
 .profile_cont {
 	display: flex;
 	width: 100%;
 	align-items: center;
-	height: inherit;
 }
 .colm_main {
 	display: flex;
@@ -300,13 +293,10 @@ p {
 	width: 100%;
 	flex-wrap: wrap;
 }
-#profile {
-	height: 100vh;
-}
 #profile .colm-2 div {
 	display: flex;
 	flex-direction: column;
-	gap: 1em;
+	gap: 30px;
 }
 #profile img {
 	width: 320px;
@@ -317,15 +307,11 @@ p {
 }
 .contact_cont {
 	width: 75%;
-	height: inherit;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	margin: auto;
-	gap: 2em;
-}
-#contact {
-	height: 100vh;
+	gap: 30px;
 }
 #contact .colm_main {
 	width: 100%;

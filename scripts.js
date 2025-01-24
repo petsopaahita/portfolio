@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $(".hero_list1").click(function(){
       $(".hero").fadeOut(1);
-      $(".hero2").fadeOut(250);
+      $(".hero2").fadeOut(1);
       $(".menubar").fadeIn(1000);
       $(".header").fadeOut(1);
       $(".projects").fadeIn(1000);
@@ -14,7 +14,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".hero_list2").click(function(){
       $(".hero").fadeOut(1);
-      $(".hero2").fadeOut(250);
+      $(".hero2").fadeOut(1);
       $(".menubar").fadeIn(1000);
       $(".header").fadeOut(1);   
       $(".profile").fadeIn(1000);
@@ -27,7 +27,7 @@ $(document).ready(function(){
  $(document).ready(function(){
    $(".hero_list3").click(function(){
        $(".hero").fadeOut(1);
-       $(".hero2").fadeOut(250);
+       $(".hero2").fadeOut(1);
        $(".menubar").fadeIn(1000);
        $(".header").fadeOut(1);      
        $(".contact").fadeIn(1000);
@@ -58,7 +58,23 @@ $(document).ready(function(){
  });
  $(document).ready(function(){
   $(".menubar1").click(function(){
-    $(".projects, .profile, .contact, .menubar, .xpnd_menu").fadeOut(1);
+    $(".xpnd_menu, .profile, .contact").fadeOut(1);
+    $(".projects").fadeIn(2000);
+    $("#main").animate({ opacity: 100 }, 2000);
+    });
+ });
+ $(document).ready(function(){
+  $(".menubar2").click(function(){
+    $(".xpnd_menu, .projects, .contact").fadeOut(1);
+    $(".profile").fadeIn(2000);
+    $("#main").animate({ opacity: 100 }, 2000);
+    });
+ });
+ $(document).ready(function(){
+  $(".menubar3").click(function(){
+    $(".xpnd_menu, .projects, .profile").fadeOut(1);
+    $(".contact").fadeIn(2000);
+    $("#main").animate({ opacity: 100 }, 2000);
     });
  });
 
