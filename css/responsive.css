@@ -1,4 +1,25 @@
+@media screen and (max-width: 991px) {
+    .menubar ul {
+        display: none;
+    }
+    .menubar .menu {
+        display: flex;
+    }
+}
+
 @media screen and (max-width: 767px) {
+    .display_none-767 {
+        display: none !important;
+    }
+    .display_flex-767 {
+        display: flex !important;
+    }
+    .header .header_icons {
+        display: none;
+    }
+    .header .menu {
+        display: flex !important;
+    }
     .colm_main {
         flex-direction: column;
     }
@@ -40,15 +61,6 @@
     .hero_list2 {
         border-right: 0;
         border-left: 0;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .menubar ul {
-        display: none;
-    }
-    .menubar .menu {
-        display: flex;
     }
 }
 
