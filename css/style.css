@@ -31,6 +31,11 @@ html{
 
 body{
   font:normal 75% Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+body * {
+	box-sizing: border-box;
 }
 
 canvas{
@@ -66,13 +71,9 @@ canvas{
 }
 
 /*-------------- main -----------------*/
-body {
-  overflow: hidden;
-}
 
 h1 {
     color: #fff;
-    z-index: 2;
     font-family: 'Roboto', monospace;
     font-weight: 700;
     font-size: clamp(2.5rem, 2rem + 2.5vw, 5rem);
@@ -97,7 +98,7 @@ h4 {
 li {
 	color: #fff;
 	font-family: 'Arial';
-	font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+	font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
 }
 li:hover, i:hover {
     cursor: pointer;
@@ -111,16 +112,17 @@ p {
 	display: none;
 }
 #main {
-	background-color: transparent;
-	position: absolute;
-	padding: 0 5%;
-	width: 90%;
-	overflow-y: scroll;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-size: contain;
-	z-index: 2;
-	transition: transform 1s ease;
+    background-color: transparent;
+    position: absolute;
+    padding: 0 5%;
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform 1s ease;
+    height: 100vh;
+	overflow: auto;
+	scroll-behavior: smooth;
 }
 #main * {
 	transition: transform 1s ease;
@@ -182,7 +184,7 @@ p {
     position: absolute;
     bottom: 0;
     width: 100%;
-    margin-bottom: clamp(2.5rem, 2rem + 2.5vw, 5rem);
+    margin-bottom: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
 }
 .hero_list {
 	display: flex;
@@ -191,6 +193,11 @@ p {
 .hero_list li {
 	flex: 0 0 33.33%;
 	text-align: center;
+	transition: background-color 0.6s ease !important;
+	padding: 24px 0;
+}
+.hero_list li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 .hero_list2 {
 	border-right: 1px solid;
@@ -229,13 +236,19 @@ p {
 	font-size: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
 }
 .menubar {
-	width: 90%;
 	margin: auto;
-	top: 0;
 	justify-content: space-between;
 }
-.menubar * {
+.menubar ul {
 	display: flex;
+	justify-content: flex-end;
+	height: inherit;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.menubar .menu {
+	display: none;
 }
 .menubar .menu {
 	width: 90px !important;
@@ -246,6 +259,13 @@ p {
 .menubar .menu .fa-solid.fa-bars {
 	color: #fff;
 	font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
+}
+.menubar li {
+    transition: background-color 0.6s ease !important;
+	padding: 24px;
+}
+.menubar li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 .space-80 {
 	height: clamp(2.5rem, 2rem + 2.5vw, 5rem);
@@ -268,18 +288,6 @@ p {
 }
 .gallery_items {
 	margin-bottom: 30px;
-}
-.menubar ul {
-	display: flex;
-	justify-content: flex-end;
-	height: inherit;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: clamp(1.875rem, 1rem + 4.375vw, 6.25rem);
-	width: 100%;
-}
-.menubar .menu {
-	display: none;
 }
 .profile_cont {
 	display: flex;

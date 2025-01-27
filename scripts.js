@@ -46,8 +46,8 @@ $(document).ready(function(){
     });
  });
  $(document).ready(function(){
-  $(".backbtn").click(function(){
-    $(".hero, .hero2, .header").fadeIn(1000);
+  $(".backbtn, .menubar-home").click(function(){
+    $(".hero, .hero2, .header").stop(true, false).fadeIn(1000);
     $(".projects, .profile, .contact, .menubar, .xpnd_menu").fadeOut(1);
     $("#particles-js").addClass("clicked");
     $("#particles-js").fadeIn(2000);
@@ -57,26 +57,25 @@ $(document).ready(function(){
     });
  });
  $(document).ready(function(){
-  $(".menubar1").click(function(){
-    $(".xpnd_menu, .profile, .contact").fadeOut(1);
+  $(".menubar1, .menubar-list1").click(function(){
+    $(".xpnd_menu, .profile, .contact").stop(true, false).fadeOut(1);
     $(".projects").fadeIn(2000);
     $("#main").animate({ opacity: 100 }, 2000);
     });
  });
  $(document).ready(function(){
-  $(".menubar2").click(function(){
-    $(".xpnd_menu, .projects, .contact").fadeOut(1);
+  $(".menubar2, .menubar-list2").click(function(){
+    $(".xpnd_menu, .projects, .contact").stop(true, false).fadeOut(1);
     $(".profile").fadeIn(2000);
     $("#main").animate({ opacity: 100 }, 2000);
     });
  });
  $(document).ready(function(){
-  $(".menubar3").click(function(){
-    $(".xpnd_menu, .projects, .profile").fadeOut(1);
+  $(".menubar3, .menubar-list3").click(function(){
+    $(".xpnd_menu, .projects, .profile").stop(true, false).fadeOut(1);
     $(".contact").fadeIn(2000);
     $("#main").animate({ opacity: 100 }, 2000);
     });
  });
-
 
 

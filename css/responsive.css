@@ -31,14 +31,19 @@
     }
     ul.hero_list {
         flex-direction: column;
-        gap: 30px;
+        gap: 0;
         margin: 0 7%;
-        align-items: baseline;
+    }
+    .hero_list li {
+        text-align: left;
     }
     .hero_list2 {
         border-right: 0;
         border-left: 0;
     }
+}
+
+@media screen and (max-width: 991px) {
     .menubar ul {
         display: none;
     }
