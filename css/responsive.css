@@ -14,7 +14,7 @@
     .display_flex-767 {
         display: flex !important;
     }
-    .header .header_icons {
+    .header .social_icons {
         display: none;
     }
     .header .menu {
@@ -61,6 +61,12 @@
     .hero_list2 {
         border-right: 0;
         border-left: 0;
+    }
+    .hero2 .hero_list{
+        display: none;
+    }
+    .hero2 .social_icons {
+        display: flex;
     }
 }
 

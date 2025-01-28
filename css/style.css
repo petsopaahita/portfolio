@@ -111,6 +111,15 @@ p {
 .projects, .menubar, .profile, .contact, .xpnd_menu {
 	display: none;
 }
+.social_icons {
+	gap: clamp(0.5rem, 0.4rem + 0.5vw, 1rem);
+	align-items: center;
+	margin: 0 1em;
+	display: flex;
+}
+.menu {
+	margin: 0 1em;
+}
 #main {
     background-color: transparent;
     position: absolute;
@@ -123,6 +132,7 @@ p {
     height: 100vh;
 	overflow: auto;
 	scroll-behavior: smooth;
+	z-index: 2;
 }
 #main * {
 	transition: transform 1s ease;
@@ -136,29 +146,21 @@ p {
 	margin: auto;
 	z-index: 3;
 	display: flex;
+	margin-top: 30px;
 }
-.header i {
+.social_icons i {
 	color: #fff;
 	font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
 }
-.header .header_icons {
-	gap: clamp(0.5rem, 0.4rem + 0.5vw, 1rem);
-	align-items: center;
-	margin: 0 1em;
-	display: flex;
-}
 #header .menu {
-    margin: 0 1em;
 	display: none;
 	align-items: center;
 }
 .logo_cont img {
-	width: clamp(5rem, 3.5rem + 7.5vw, 12.5rem);
+	width: clamp(5rem, 4rem + 5vw, 10rem);
 }
 .logo_cont img:hover {
     cursor: pointer;
-}
-.logo_cont img:hover {
 	opacity: 0.7;
 }
 .logo_cont img:active {
@@ -188,7 +190,10 @@ p {
     position: absolute;
     bottom: 0;
     width: 100%;
-    margin-bottom: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
+    margin-bottom: 30px;
+}
+.hero2 .social_icons {
+	display: none;
 }
 .hero_list {
 	display: flex;
@@ -198,7 +203,7 @@ p {
 	flex: 0 0 33.33%;
 	text-align: center;
 	transition: background-color 0.6s ease !important;
-	padding: 24px 0;
+	padding: 16px 0;
 }
 .hero_list li:hover {
     background-color: rgba(255, 255, 255, 0.1);
@@ -240,7 +245,7 @@ p {
 	font-size: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
 }
 .menubar {
-	margin: auto;
+	margin: 30px auto 0;
 	justify-content: space-between;
 }
 .menubar ul {
@@ -252,15 +257,11 @@ p {
 	width: 100%;
 }
 .menubar .menu {
-	display: none;
-}
-.menubar .menu {
-	width: 90px !important;
-	height: inherit;
 	justify-content: center;
 	align-items: center;
+	display: none;
 }
-.menubar .menu .fa-solid.fa-bars {
+.menu i {
 	color: #fff;
 	font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
 }
