@@ -5,6 +5,9 @@
     .menubar .menu {
         display: flex;
     }
+    .project_list {
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -67,6 +70,9 @@
     }
     .hero2 .social_icons {
         display: flex;
+    }
+    .project_list {
+        grid-template-columns: repeat(1,1fr);
     }
 }
 
