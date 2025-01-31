@@ -309,9 +309,6 @@ p {
 	flex-direction: column;
 	gap: 30px;
 }
-#profile img {
-	width: 320px;
-}
 #profile .colm-1 {
 	display: flex;
 	justify-content: center;
