@@ -135,6 +135,11 @@ p {
 #main * {
 	transition: transform 1s ease;
 }
+.colm_main {
+	display: flex;
+	max-width: 100%;
+	width: 100%;
+}
 .header {
 	justify-content: space-between;
 	display: flex;
@@ -211,7 +216,6 @@ p {
 	border-left: 1px solid;
 }
 .colm {
-	flex: 0 0 50%;
 	max-width: 50%;
 	align-self: center;
 }
@@ -297,12 +301,12 @@ p {
 	width: 100%;
 	align-items: center;
 }
-.colm_main {
-	display: flex;
-	flex-direction: row;
-	max-width: 100%;
-	width: 100%;
-	flex-wrap: wrap;
+.profile .colm_main {
+    justify-content: space-evenly;
+	gap: 30px;
+}
+.profile img {
+    max-width: 100%;
 }
 #profile .colm-2 div {
 	display: flex;
