@@ -243,6 +243,9 @@ body {
 .text_center {
   text-align: center;
 }
+.max_wdth-33 {
+  max-width: 33.333%;
+}
 
 /*-------------- main -----------------*/
 
@@ -466,9 +469,12 @@ img {
   justify-content: space-evenly;
   gap: 30px;
 }
-#profile img {
+/* #profile img {
   max-width: clamp(25rem, -1.602rem + 42.949vw, 49.938rem);
   max-height: clamp(25rem, -1.602rem + 42.949vw, 49.938rem);
+} */
+#profile .colm.colm-1 {
+  max-width: 33.333%;
 }
 #profile .colm-2 div {
   display: flex;

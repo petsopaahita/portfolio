@@ -8,8 +8,8 @@
   .project_list {
     grid-template-columns: repeat(2, 1fr);
   }
-  .flex_wrap-991 {
-    flex-wrap: wrap;
+  .flex_col-991 {
+    flex-direction: column;
   }
   .text_center-991 {
     text-align: center;
@@ -17,6 +17,9 @@
   #profile img {
     max-width: 100%;
     max-height: 100%;
+  }
+  #profile .colm.colm-1 {
+    max-width: 75%;
   }
 }
 
@@ -40,7 +43,7 @@
     padding-left: 0;
   }
   #profile .colm {
-    max-width: 75%;
+    max-width: 100%;
   }
   #profile .colm_main {
     gap: 2em;
@@ -83,6 +86,9 @@
   }
   .project_list {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .text_center-767 {
+    text-align: center;
   }
 }
 
