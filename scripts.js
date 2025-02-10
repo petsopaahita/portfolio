@@ -80,3 +80,34 @@ $(document).ready(function () {
     $("#main").stop().animate({ opacity: 0.01 }, 1000);
   });
 });
+
+//-------------------------------------------------------------
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = [
+    { id: "projects", menuItemClass: "menubar-list1" },
+    { id: "profile", menuItemClass: "menubar-list2" },
+    { id: "contact", menuItemClass: "menubar-list3" },
+  ];
+
+  const observers = sections.map((section) => {
+    const sectionElement = document.getElementById(section.id);
+    const menuItem = document.querySelector(`.${section.menuItemClass}`);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            menuItem.classList.add("highlight");
+          } else {
+            menuItem.classList.remove("highlight");
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    observer.observe(sectionElement);
+    return observer;
+  });
+});
