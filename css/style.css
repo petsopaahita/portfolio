@@ -290,6 +290,7 @@ p {
 img {
   max-width: 100%;
   max-height: 100%;
+  object-fit: cover;
 }
 .projects,
 .menubar,
@@ -325,7 +326,6 @@ img {
   background-size: contain;
   transition: transform 1s ease;
   height: 100vh;
-  overflow: auto;
   z-index: 2;
 }
 #main * {
@@ -349,6 +349,10 @@ img {
 #header .menu {
   display: none;
   align-items: center;
+}
+.logo_cont {
+  align-items: center;
+  display: flex;
 }
 .logo_cont img {
   width: clamp(5rem, 4rem + 5vw, 10rem);
@@ -460,6 +464,10 @@ img {
 }
 .menubar li:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+#projects {
+  overflow: auto;
+  height: 90vh;
 }
 .project_list {
   grid-template-columns: repeat(3, 1fr);
