@@ -215,6 +215,12 @@ body {
 
 /*-------------- global css -----------------*/
 
+.height-85vh {
+  height: 85vh;
+}
+.height-80vh {
+  height: 80vh;
+}
 .height-75vh {
   height: 75vh;
 }
@@ -505,6 +511,16 @@ img {
 #profile .colm-1 {
   display: flex;
   justify-content: center;
+}
+.profile_list {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: clamp(1.875rem, 1.25rem + 3.125vw, 5rem);
+}
+.profile_skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 .contact_cont {
   width: 75%;
