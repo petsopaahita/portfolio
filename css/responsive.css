@@ -5,7 +5,8 @@
   .menubar .menu {
     display: flex;
   }
-  .project_list {
+  .project_list,
+  .profile_list {
     grid-template-columns: repeat(2, 1fr);
   }
   .flex_col-991 {
@@ -84,7 +85,8 @@
   .hero2 .social_icons {
     display: flex;
   }
-  .project_list {
+  .project_list,
+  .profile_list {
     grid-template-columns: repeat(1, 1fr);
   }
   .text_center-767 {
