@@ -477,9 +477,9 @@ img {
 }
 #projects {
   overflow: auto;
-  margin-top: 30px;
   height: 85vh;
-  padding-bottom: 5vh;
+  margin-top: clamp(2.5rem, 2rem + 2.5vw, 5rem);
+  padding-bottom: clamp(2.5rem, 2rem + 2.5vw, 5rem);
 }
 .project_list {
   grid-template-columns: repeat(3, 1fr);
@@ -536,25 +536,33 @@ img {
   font-size: 24px;
   color: #fff;
 }
+#contact {
+  margin-top: clamp(2.5rem, 2rem + 2.5vw, 5rem);
+}
 .contact_cont {
-  width: 75%;
   flex-direction: column;
   justify-content: center;
-  gap: 30px;
 }
-#contact .colm_main {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+.project_title,
+.contact_title {
+  text-align: center;
+  margin-bottom: clamp(2.5rem, 2rem + 2.5vw, 5rem);
 }
-#contact .colm li {
-  display: flex;
-  height: 5em;
-  align-items: center;
+#contact .display_grid {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: clamp(1.875rem, 1.25rem + 3.125vw, 5rem);
 }
-#contact .colm li i {
-  font-size: 32px;
+.contact_cards {
   display: flex;
-  width: 2em;
+  gap: 16px;
+}
+.cont_crd_col-2 {
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#contact .contact_list i {
+  color: #fff;
+  font-size: 80px;
 }
