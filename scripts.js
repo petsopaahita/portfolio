@@ -111,3 +111,15 @@ document.addEventListener("DOMContentLoaded", function () {
     return observer;
   });
 });
+
+//--------------------------Contact Me Form-----------------------------------
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (e) {
+    // Allow the form to submit
+    setTimeout(() => {
+      // Clear the form after submission
+      this.reset();
+    }, 100); // Add a slight delay to ensure the form submission completes
+  });
