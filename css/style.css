@@ -146,10 +146,6 @@ li {
   list-style: none;
 }
 
-/* =============================================================================
-   My CSS
-   ========================================================================== */
-
 html,
 body {
   width: 100%;
@@ -256,31 +252,31 @@ body {
 /*-------------- main -----------------*/
 
 h1 {
-  color: #fff;
+  color: #f0f0f0;
   font-family: "Roboto", monospace;
   font-weight: 700;
   font-size: clamp(2.5rem, 2rem + 2.5vw, 5rem);
 }
 h2 {
   font-size: clamp(1.875rem, 1.5rem + 1.875vw, 3.75rem);
-  color: #fff;
+  color: #f0f0f0;
   font-family: "Roboto", "Arial";
   font-weight: 700;
 }
 h3 {
   font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
-  color: #fff;
+  color: #f0f0f0;
   font-family: "Roboto", "Arial";
   font-weight: 700;
 }
 h4 {
   font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
-  color: #fff;
+  color: #f0f0f0;
   font-family: "Roboto", "Arial";
   font-weight: 700;
 }
 li {
-  color: #fff;
+  color: #f0f0f0;
   font-family: "Arial";
   font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
 }
@@ -290,7 +286,7 @@ i:hover {
 }
 p {
   font-size: 16px;
-  color: #fff;
+  color: #f0f0f0;
   font-family: "Arial";
 }
 img {
@@ -352,7 +348,7 @@ img {
   margin-top: 16px;
 }
 .social_icons i {
-  color: #fff;
+  color: #f0f0f0;
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
 }
 #header .menu {
@@ -440,7 +436,7 @@ img {
   font-size: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
 }
 .menubar {
-  margin-top: clamp(1.5rem, 1.425rem + 0.375vw, 1.875rem);
+  margin-top: 16px;
   justify-content: space-between;
   height: 10vh;
 }
@@ -449,7 +445,7 @@ img {
   color: #333;
 }
 .menubar-list .highlight:hover {
-  color: #fff;
+  color: #f0f0f0;
 }
 .menubar ul {
   display: flex;
@@ -465,7 +461,7 @@ img {
   display: none;
 }
 .menu i {
-  color: #fff;
+  color: #f0f0f0;
   font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
 }
 .menubar li {
@@ -474,6 +470,12 @@ img {
 }
 .menubar li:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+.project_title,
+.profile_title,
+.contact_title {
+  text-align: center;
+  margin-bottom: clamp(2.5rem, 2rem + 2.5vw, 5rem);
 }
 #projects {
   overflow: auto;
@@ -529,25 +531,22 @@ img {
   gap: 16px;
 }
 #profile .profile_skills i {
-  color: #fff;
-  font-size: clamp(6.25rem, 5.5rem + 3.75vw, 10rem);
+  color: #f0f0f0;
+  font-size: clamp(5rem, 4rem + 5vw, 10rem);
 }
 #profile .profile_skills span {
   font-size: 24px;
-  color: #fff;
+  color: #f0f0f0;
 }
 #contact {
-  margin-top: clamp(2.5rem, 2rem + 2.5vw, 5rem);
+  overflow: hidden;
 }
-.contact_cont {
+#contact .contact_cont {
   flex-direction: column;
   justify-content: center;
-}
-.project_title,
-.profile_title,
-.contact_title {
-  text-align: center;
-  margin-bottom: clamp(2.5rem, 2rem + 2.5vw, 5rem);
+  height: 85vh;
+  overflow: auto;
+  justify-content: unset;
 }
 #contact .display_grid {
   grid-template-columns: repeat(2, 1fr);
@@ -564,57 +563,83 @@ img {
   gap: 16px;
 }
 #contact .contact_list i {
-  color: #fff;
+  color: #f0f0f0;
   font-size: 80px;
+}
+.cont_me-form {
+  align-items: center;
+  border-radius: 30px;
+  background: rgba(128, 128, 128, 0.5);
+  margin: auto;
+}
+.cont_me-form .colm-1,
+.cont_me-form .colm-2 {
+  max-width: 50%;
+  width: 100%;
+  padding: clamp(1.875rem, 1.625rem + 1.25vw, 3.125rem);
+  justify-content: space-between;
 }
 
 /* ------------------Contact form------------------------- */
 
 .contact_form {
-  display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
+  gap: 16px;
 }
-
 .form_group {
   display: flex;
   flex-direction: column;
 }
-
+.cont_me-form span {
+  color: #f0f0f0;
+  font-family: "Roboto", monospace;
+  font-weight: 700;
+  font-size: clamp(2.5rem, 2rem + 2.5vw, 5rem);
+}
+.cont_me-form h2 {
+  color: #808080;
+}
+.cont_me-form .colm-1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 30px;
+}
 .form_group label {
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 8px;
+  font-family: "Roboto", "Arial";
+  font-size: 16px;
+  color: #f0f0f0;
 }
-
 .form_group input,
 .form_group textarea {
-  padding: 0.75rem;
+  padding: 16px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "Roboto", "Arial";
 }
-
 .form_group input:focus,
 .form_group textarea:focus {
   outline: none;
-  border-color: #007bff;
 }
-
 .btn {
-  padding: 0.75rem 1.5rem;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
+  padding: 16px 24px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #f0f0f0;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
+  margin-top: 14px;
+  font-family: "Roboto", "Arial";
+  transition: background-color 0.6s ease !important;
 }
-
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #f0f0f0;
+  color: #333;
 }
 
 /* ------------------end of Contact form------------------------- */

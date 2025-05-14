@@ -22,6 +22,16 @@
   #profile .colm.colm-1 {
     max-width: 75%;
   }
+  #contact .cont_me-form {
+    flex-direction: column;
+  }
+  .cont_me-form .colm-1,
+  .cont_me-form .colm-2 {
+    max-width: 100%;
+  }
+  .cont_me-form .colm-1 {
+    padding-bottom: 0px !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -49,7 +59,7 @@
   #profile .colm_main {
     gap: 2em;
   }
-  .contact_cont {
+  #contact .contact_cont {
     width: 100%;
   }
   #contact .colm {
@@ -96,8 +106,9 @@
   }
 }
 
-@media screen and (max-width: 567) {
-  #contact .colm_main {
-    width: 100%;
+@media screen and (max-width: 390px) {
+  #contact .contact_cont {
+    padding-top: 16px;
+    padding-bottom: 8vh;
   }
 }
