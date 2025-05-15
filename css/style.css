@@ -479,9 +479,13 @@ img {
 }
 #projects {
   overflow: auto;
-  height: 85vh;
+  position: relative;
+  /* height: 85vh;
   margin-top: clamp(2.5rem, 2rem + 2.5vw, 5rem);
-  padding-bottom: clamp(6.25rem, 5.5rem + 3.75vw, 10rem);
+  padding-bottom: clamp(6.25rem, 5.5rem + 3.75vw, 10rem); */
+  height: 100vh;
+  margin-top: 30px;
+  padding-bottom: 24vh;
 }
 .project_list {
   grid-template-columns: repeat(3, 1fr);
@@ -498,10 +502,6 @@ img {
   justify-content: space-evenly;
   gap: 30px;
 }
-/* #profile img {
-  max-width: clamp(25rem, -1.602rem + 42.949vw, 49.938rem);
-  max-height: clamp(25rem, -1.602rem + 42.949vw, 49.938rem);
-} */
 #profile .profile_title {
   padding-top: 30px;
 }
