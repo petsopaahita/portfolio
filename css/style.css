@@ -487,6 +487,9 @@ img {
   margin-top: 30px;
   padding-bottom: 24vh;
 }
+.gallery_items {
+  cursor: pointer;
+}
 .project_list {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: clamp(1.875rem, 1.25rem + 3.125vw, 5rem);
